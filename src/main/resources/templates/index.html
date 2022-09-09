@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../static/index.js"></script>
+
+
+</head>
+<body onload="getAllProvince()">
+<h1>List Product</h1>
+<button style="margin-bottom: 10px" onclick="getAllProvince()">Display product</button>
+<div id="list" style="display: block"></div>
+<!--<button style="margin-bottom: 10px" onclick="getAllProvince()">Display province</button>-->
+    <button onclick="formCreate()">Create new province</button>
+
+<div id="form" style="display: none">
+    <form>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><label><input type="text" id="name"></label></td>
+            </tr>
+            <tr>
+                <th>area</th>
+                <td><label><input type="text" id="area"></label></td>
+            </tr>
+            <tr>
+                <th>popular</th>
+                <td><label><input type="text" id="popular"></label></td>
+            </tr>
+            <tr>
+                <th>gdp</th>
+                <td><label><input type="text" id="gdp"></label></td>
+            </tr>
+
+            <tr>
+                <th>description</th>
+                <td><label><input type="text" id="description"></label></td>
+            </tr>
+
+            <tr>
+                <th>country</th>
+                <td><label for="country"></label><select name="country" id="country"  >
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="button" onclick="updateProvince()">Create</button></td>
+            </tr>
+
+        </table>
+    </form>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
